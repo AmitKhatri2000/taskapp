@@ -1,0 +1,43 @@
+.error-div{
+position: relative;
+width: 100%;
+background-color:white;
+
+}
+
+.error-div div{
+width: 100%;
+/* spadding: 5px; */
+
+}
+
+.error-div div p{
+ color: black;
+font-size: 17px;
+text-transform: capitalize;
+font-weight: 400;
+display: inline-block;
+padding: 5px;
+padding-top: 10px;
+width: 70%;
+
+}
+
+
+.error-div div  i{
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 5px;
+    width: fit-content;
+       
+    }
+    
+.fa{
+   
+    color:#d63031;
+}
+
+.fa-check{
+    
+    color: lightgreen;
+}

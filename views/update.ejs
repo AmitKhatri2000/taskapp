@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+<link rel="stylesheet" href="update.css">
+<button class="logout-but but"> <a href='/logout'>log out</a> </button>
+
+        <div class="update-div">
+            <h1>profile update</h1>   
+            <div class="face-img">
+            <img class="face-pic" src="profile-pic.jpg" alt="profile">
+            </div>
+        <form class="update-form">
+            <label for="username" >User Name</label>
+            <input type="text" name="username" placeholder=" User Name" required >
+            <label for="old_password" >Password</label>
+            <input type="password" name="old_password" placeholder="Confirm Password"  >
+            <label for="password" >New Password</label>
+            <input type="password" name="password" placeholder="New Password">
+            
+          <button  class="update-but but"
+          >update</button>
+    </form>
+    <button class="delete-but but"> <a href='/users'>delete</a> </button>
+</div>
+<script src="js/profileup.js"></script>
+<%- include('partials/footer'); -%>

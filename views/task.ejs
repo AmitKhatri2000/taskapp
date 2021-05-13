@@ -1,0 +1,28 @@
+<%- include('partials/header'); -%>
+<link rel="stylesheet" href="task.css">
+     <main> 
+        <button class="profile"><a href="/update">profile</a></button>
+        <form>
+        <h3>Add Tasks</h3> 
+         <div class="add-dis-div">
+        <input type="text" name="discription" placeholder="Add task" required >
+        <button class="add-but" >
+          Add
+        </button>
+        </div>
+        <div class="combo">
+        <select id="mySelect" onchange="myFunction()">
+          <option value="">All tasks</option>
+          <option value="true">completed</option>
+          <option value="false">Not Completed</option>
+        </select>
+        <div class="searchbox">
+          <label class="slabel hidden">search</label>
+          <input class="search" type="text" name="search" placeholder="search">
+        </div>
+      </div>
+        </form>
+    <nav class="taskdiv"> </nav> 
+</main>
+<script src="js/javatask.js"></script>
+<%- include('partials/footer'); -%>

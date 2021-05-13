@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+.hidden{
+
+  display: none;
+}
+a{
+  color: white;
+}
+body{
+
+background-color: #25CCF7;    
+
+}
+
+form{
+    text-align: center;
+}
+
+
+.paradis{
+    display: block;
+}
+.paradis.hidden{
+    display: none;
+}
+
+.editdiv{
+    display: block;
+    
+    }
+.editdiv.hidden{
+display: none;
+
+}
+
+.profile{
+position: absolute;
+top: 5px;
+right: 5px;
+ border: 1px solid lightgray;
+ 
+width: 80px;
+height: 30px;
+box-sizing: border-box;
+background-color: #82589F;
+
+}
+
+.profile a{
+ text-align: center;
+ font-size: 17px;
+ font-weight: 600;
+ color: whitesmoke;
+ text-transform: capitalize;
+
+
+}
+input:focus::placeholder {
+  color: transparent;
+
+ }
+
+h3{
+
+   text-align: center; 
+  color:whitesmoke;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+.add-dis-div{
+ width: 400px;   
+text-align: center;
+display: flex;
+margin: 0 auto;
+
+}
+
+.add-dis-div input{
+  border: 1px solid lightgray;
+padding: 5px;
+width: 90%;
+height: 30px;
+outline: none;
+}
+
+.add-dis-div button{
+     border: 1px solid lightgray;
+    background-color: white;
+    border-left: 1px solid #25CCF7;
+    width: 50px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.combo{
+ 
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#mySelect{
+  
+    padding-left: 5px;
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 48%;
+    box-sizing: border-box;
+    font-size: 17px;
+     cursor: pointer;
+    outline: none;
+    height: 30px;
+    display: inline-block;
+    
+
+}
+.searchbox{
+  margin-left: 15px;
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+}
+.slabel {
+  padding-left: 4px;
+  color: whitesmoke;
+  font-weight: 600;
+ 
+
+}
+.slabel.hidden {
+   display: none;
+
+}
+.search{
+  height: 30px;
+  width: 100%;
+   border: none;
+  background: transparent;
+  border-bottom: 2px solid gray;
+  outline:  none;
+  color: whitesmoke;
+  padding-left: 5px;
+ 
+
+}
+
+.search:focus{ 
+  border-bottom: 2px solid #82589F;
+}
+
+
+.taskdiv{
+    padding: 10px;
+    width: 400px;
+    max-height:400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    overflow-y : scroll;
+   
+}
+
+.taskdiv .tasksubdiv{
+ position: relative;
+   width: 100%;
+   margin-bottom: 8px;
+   min-height: 40px;
+}
+
+
+.container{
+display: inline-block;
+position: absolute;
+cursor: pointer;
+user-select: none;
+height: 12px;
+width: 12px;
+top: 3px;
+left: 0px;
+
+}
+
+.checkbox{
+    top: 0px;
+    left: 0px;
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;  
+}
+
+.checkmark {
+  border-radius: 50%;
+position: absolute;
+height: 12px;
+width: 12px;
+background-color: #eee;
+border: 1px solid lightgray;
+
+
+}
+
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+ 
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+
+.paradis{
+  padding-top: 2px;
+width: 95%;
+display: inline-block;  
+margin-left: 20px;    
+word-wrap: break-word;
+max-height: 100px;
+margin-bottom: 5px;
+}
+.editdiv{
+margin-left: 20px;
+width: 95%;
+margin-bottom: 5px;
+
+}
+
+
+.editdiv label{
+  padding-top: 2px;
+  display: block;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  
+  
+  }
+.editdiv input{
+  display: inline-block;
+  
+  border: 1px solid #82589F;
+  width: 80%;
+  outline: none;
+  padding: 5px;
+  }
+
+.savebut{
+    border: 1px solid lightgray;
+    text-transform: capitalize;
+    width: 50px;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    color: #EAB543;
+    background-color: white;
+    padding: 5px;
+}
+.editbut{
+     border: 1px solid lightgray;
+     width: 50px;
+    box-sizing: border-box;
+    font-size: 16px;
+  text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    color: #EAB543;
+    margin-right: 5px;
+    background-color:  white;
+    
+    padding: 3px;
+}
+.delbut{
+    position: relative;
+     border: 1px solid lightgray;
+     width: 60px;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+      outline: none;
+    background-color:  white;
+    
+    padding: 3px;
+}
+
+.delbut a{
+  color: #EAB543;
+}

@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    background-color:#25CCF7;
+  
+}
+
+h1{
+    padding-top: 10px;
+    text-transform: capitalize;
+    margin: 10px 0 20px 0;
+    font-size: 35px;
+    color: teal;
+}
+
+.join-div{
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.join-form label {
+    text-align: left;
+    display: block;
+    margin: 10px 0 10px 10px;
+    color: teal;
+}
+
+.join-form input{
+background-color: lightgreen;
+border: none;
+border-radius: 4px;
+height: 30px;
+padding: 5px;   
+outline-style: none; 
+color: whitesmoke;
+width: 90%;
+}
+
+.join-but{
+margin-left: 50%;
+transform: translateX(-50%);  
+display:block;
+border: none;
+border-radius: 6px;
+padding: 5px;
+width: 30%;
+height: 30px;
+outline-style: none;
+background-color: lightgreen;
+color: white;
+cursor: pointer;
+margin-top: 20px;
+font-size: 15px;
+font-weight: 600;
+}
+
+.signup{
+margin-top: 20px;
+}
+
+.signup a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.create-div{
+    background-color: whitesmoke;
+    text-align: center;
+    width: 300px;
+    height: 370px;
+    border-radius: 5px;
+}
+
+.create-but{
+width: 50%;
+
+}
